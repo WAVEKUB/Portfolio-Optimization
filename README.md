@@ -1,6 +1,6 @@
 # Portfolio Optimization
 
-This project implements various metaheuristic algorithms to optimize a stock portfolio. It refactors a Jupyter Notebook into a modular Python project structure.
+This project implements various metaheuristic algorithms to optimize a stock portfolio.
 
 ## Project Structure
 
