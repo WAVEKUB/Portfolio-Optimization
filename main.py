@@ -14,8 +14,11 @@ from src.optimizers import (
 )
 
 def main():
-    # 1. Get Data
-    prices_df = get_data(config.ASSETS, period=config.PERIOD)
+    # 1. Get Data Using Start and End Dates
+    prices_df = get_data(config.ASSETS, config.START, config.END)
+
+    # 1. Get Data Using Period
+    # prices_df = get_data(config.ASSETS, period=config.PERIOD)
     
     # 2. Prepare Data
     mu_annual, Sigma_annual, trading_days = prepare_data(prices_df)

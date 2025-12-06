@@ -13,5 +13,7 @@ ASSETS = [
     'WMT'     # Walmart Inc.
 ]
 
-RISK_FREE_RATE = 0.2  # annual risk-free rate (e.g. 0.1 == 10%)
-PERIOD = "2y"
+RISK_FREE_RATE = 0.02  # annual risk-free rate (e.g. 0.1 == 10%)
+#PERIOD = "2y"
+START = "2023-01-01"
+END = "2024-12-31"

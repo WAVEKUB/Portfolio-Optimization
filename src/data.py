@@ -1,11 +1,13 @@
 # src/data.py
 import yfinance as yf
 import pandas as pd
-import numpy as np
 
-def get_data(assets, period="2y"):
+def get_data(assets, start, end, period=None):
     print(f"Downloading data for {assets}...")
-    raw_prices = yf.download(assets, period=period)["Close"]
+    if period is not None:
+        raw_prices = yf.download(assets, period=period)["Close"]    
+    else:
+        raw_prices = yf.download(assets, start=start, end=end)["Close"]
     
     if isinstance(raw_prices, pd.Series):
         prices_df = raw_prices.to_frame()
