@@ -144,7 +144,7 @@ Each optimizer respects:
    source .venv/bin/activate
 
    # On Windows:
-   .venv\Scriptsctivate
+   .venv\Scripts\activate
    ```
 
 3. **Install dependencies**
